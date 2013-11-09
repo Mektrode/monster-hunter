@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+    <title>Monster Hunter</title>
+	<meta name="author" content="M-Hc0d3" />
+	<meta name="description" content="Js Canvas Game" />
+
+	<link href='http://fonts.googleapis.com/css?family=Joti+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<!-- webpage content goes here in the body -->
+
+	<div id="page">
+		
+		<!--Game Content-->
+		<div id="content">
+			<center>
+				<h1>Monster Hunter</h1>
+			
+	    		<div id="gamediv"></div>
+	    	</center>
+
+	    	<hr>
+	    	<ul><b>Todo List:-</b>
+	    		<li>Fix Border Problem</li>
+	    		<li>Add 60 second timing system</li>
+	    		<li>Wrap game on a onlick functioning button</li>
+	    		<li>Add new images</li>
+	    		<li>Add two player system</li>
+	    		<li>Add animations and sprites</li>
+	    	</ul>
+		</div>
+
+	</div>
+
+<!-- END of HTML code-->
+<script src="js/game.js"></script>
+</body>
+</html>
+
+
+<script>
+$("#gamediv").click ( function(){
+	//Dim Background and lock scroll
+	$(this).hide();
+});
+</script>
+
+<style>
+
+/*
+* multi-line comment
+*/
+
+
+body{
+    font-family: 'Joti One'; font-size: 80%; line-height: 1.2em; width: 100%; margin: 0; background: url('images/wallpaper.jpg');
+}
+
+#page{ margin: 40px; }
+
+#content {
+	width: 100%;
+	height: 100%;
+	background: rgba(92, 90, 115, 0.5);
+	padding: 10px;
+	position: relative;
+}
+
+#gamediv {
+	text-align: center;
+	background: black;
+	border: 1px black solid;
+	width: 1000px;
+	height: 720px;
+	margin-top: 10px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+</style>
