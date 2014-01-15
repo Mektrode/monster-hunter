@@ -3,8 +3,8 @@
 // Create the canvas
 var canvas = document.createElement("canvas");
 var ctx = canvas.getContext("2d");
-canvas.width = 512;
-canvas.height = 480;
+canvas.width = 400//$('#gamediv').width();
+canvas.height = 500 //$('#gamediv').height();
 document.getElementById('gamediv').appendChild(canvas);
 
 // Background image
